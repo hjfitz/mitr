@@ -1,24 +1,24 @@
-# 🚑 Emt
-> Tinier TS Event Emitter
+# 🎩 mitr
+> Tinier event emitter
 
 ## Install
 ```zsh
-yarn add ${libname}
+yarn add mitr
 ```
 
 ## Usage
 ```ts
-import Emitter from '${libname}'
+import Emitter from 'mitr'
 
-const emt = new Emitter()
+const mitr = new Emitter()
 
-emt.on('complete', (data) => {
+mitr.on('complete', (data) => {
 	console.log('callbacks are still cool!')
 	doSomethingWithData(data);
 })
 
 fetch('/api/make/coffee').then((data) => {
-	emt.emit('complete', data)
+	mitr.emit('complete', data)
 })
 ```
 
