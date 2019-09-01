@@ -32,3 +32,6 @@ Removes all events of type $event
 
 #### emit(event: string, data?: any)
 Emit an event to all $event listeners with optional data
+
+## Inspiration
+[mitt](https://github.com/developit/mitt) by [developit](https://github.com/developit/)
